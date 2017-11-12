@@ -1,0 +1,23 @@
+{
+  "name": "yakapa-common",
+  "version": "1.0.0",
+  "description": "Common functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quickysoft-apps/yakapa-common.git"
+  },
+  "keywords": [
+    "yakapa",
+    "utils"
+  ],
+  "author": "QuickySoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quickysoft-apps/yakapa-common/issues"
+  },
+  "homepage": "https://github.com/quickysoft-apps/yakapa-common#readme"
+}
