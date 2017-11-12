@@ -1,4 +1,4 @@
-import date from './date'
+import * as date from './date'
 
 const prefixedLogArguments = function(args) {
 	const a = [`[${date.nowString()}]`]
@@ -8,18 +8,14 @@ const prefixedLogArguments = function(args) {
 	return a
 }
 
-const logger = {
-	info: function() {		
-		console.info.apply(console, prefixedLogArguments(arguments));
-	},
-	warn: function() {		
-		console.warn.apply(console, prefixedLogArguments(arguments));
-	},
-	error: function() {		
-		console.error.apply(console, prefixedLogArguments(arguments));
-	}
+export const info = function() {
+	console.info.apply(console, prefixedLogArguments(arguments));
 }
 
-export default {	
-	logger
+export const warn = function() {
+	console.warn.apply(console, prefixedLogArguments(arguments));
+}
+
+export const error = function() {
+	console.error.apply(console, prefixedLogArguments(arguments));
 }
