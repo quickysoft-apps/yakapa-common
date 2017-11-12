@@ -1,5 +1,5 @@
 module.exports = {
-	date: require('./src/date'),
-	json: require('./src/logger'),
-	logger: require('./src/json')
+	date: require('./lib/date'),
+	json: require('./lib/json'),
+	logger: require('./lib/logger')
 }
